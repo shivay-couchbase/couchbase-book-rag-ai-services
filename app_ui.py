@@ -81,16 +81,16 @@ def init_ui():
 
     # Sidebar content
     with st.sidebar:
-        st.markdown(f"""
-            <div style='text-align: center;'>
-                <img src='{COUCHBASE_LOGO}' class='cover-glow' style='width: 100px; height: auto;'>
-            </div>
-        """, unsafe_allow_html=True)
+        # Load and display the Capella AI image
+        try:
+            st.image("img/capella_ai.png", width=300)
+        except:
+            st.error("Could not load Capella AI image")
         
         st.markdown("---")
         st.markdown("""
         ## About
-        **Couchbase Book Knowledge Assistant**\n
+        **Couchbase AI Services Books Assistant**\n
         **Powered by Capella AI Services**\n
         This AI Assistant uses RAG (Retrieval-Augmented Generation) to answer questions about books.
         It combines the power of Couchbase's vector search with AI to provide accurate and contextual answers.
