@@ -91,7 +91,7 @@ streamlit run app.py
 The application uses a three-step process:
 
 1. **Embedding Generation**:
-   - Uses OpenAI's embedding model to convert text to vectors
+   - Uses Capella AI Model Service embedding model to convert text to vectors
    - Generates embeddings for both queries and documents
 
 2. **Vector Search**:
